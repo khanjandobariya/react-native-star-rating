@@ -1,6 +1,6 @@
 // React and react native imports
 import React, { Component } from 'react';
-import { View, ViewPropTypes, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import PropTypes from 'prop-types';
 import { View as AnimatableView } from 'react-native-animatable';
 
@@ -23,8 +23,6 @@ const ANIMATION_TYPES = [
 const propTypes = {
   activeOpacity: PropTypes.number,
   animation: PropTypes.oneOf(ANIMATION_TYPES),
-  buttonStyle: ViewPropTypes.style,
-  containerStyle: ViewPropTypes.style,
   disabled: PropTypes.bool,
   emptyStar: PropTypes.oneOfType([
     PropTypes.string,
@@ -52,7 +50,6 @@ const propTypes = {
   rating: PropTypes.number,
   reversed: PropTypes.bool,
   starSize: PropTypes.number,
-  starStyle: ViewPropTypes.style,
   selectedStar: PropTypes.func,
 };
 
