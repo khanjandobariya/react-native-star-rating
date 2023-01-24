@@ -1,6 +1,6 @@
 // React and react native imports
 import React, { Component } from 'react';
-import { Image, StyleSheet, ViewPropTypes } from 'react-native';
+import { Image, StyleSheet } from 'react-native';
 import PropTypes from 'prop-types';
 import { createIconSetFromIcoMoon } from 'react-native-vector-icons';
 
@@ -33,7 +33,6 @@ const iconSets = {
 };
 
 const propTypes = {
-  buttonStyle: ViewPropTypes.style,
   disabled: PropTypes.bool.isRequired,
   halfStarEnabled: PropTypes.bool.isRequired,
   icoMoonJson: PropTypes.string,
@@ -48,7 +47,6 @@ const propTypes = {
   ]).isRequired,
   starSize: PropTypes.number.isRequired,
   activeOpacity: PropTypes.number.isRequired,
-  starStyle: ViewPropTypes.style,
   onStarButtonPress: PropTypes.func.isRequired,
 };
 
